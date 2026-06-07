@@ -203,7 +203,7 @@ type FieldProps = {
 };
 function Field({ label, name, as = "input", children, ...rest }: FieldProps) {
   const id = `f-${name}`;
-  const cls = "w-full bg-transparent border-b border-white/20 focus:border-gold outline-none py-3 text-ivory placeholder:text-ivory/30 transition-colors";
+  const cls = "w-full bg-[var(--navy)] border-b border-white/20 focus:border-gold outline-none py-3 text-ivory placeholder:text-ivory/30 transition-colors";
   return (
     <div>
       <label htmlFor={id} className="block text-[0.65rem] tracking-[0.28em] uppercase text-ivory/60 mb-2">
@@ -212,7 +212,7 @@ function Field({ label, name, as = "input", children, ...rest }: FieldProps) {
       {as === "textarea" ? (
         <textarea id={id} name={name} className={cls} {...rest} />
       ) : as === "select" ? (
-        <select id={id} name={name} className={`${cls} appearance-none`} {...rest}>
+        <select id={id} name={name} className={`${cls} appearance-none cursor-pointer`} {...rest}>
           {children}
         </select>
       ) : (

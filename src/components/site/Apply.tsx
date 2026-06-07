@@ -117,9 +117,9 @@ export function Apply() {
             <Field label="Email" name="email" type="email" required maxLength={255} />
             <Field label="Phone" name="phone" required maxLength={40} />
             <Field as="select" label="Programme" name="programme" required>
-              <option value="">Select programme…</option>
+              <option value="" className="bg-[var(--navy)] text-ivory">Select programme…</option>
               {PROGRAMMES.map((p) => (
-                <option key={p} value={p}>{p}</option>
+                <option key={p} value={p} className="bg-[var(--navy)] text-ivory">{p}</option>
               ))}
             </Field>
             <div className="sm:col-span-2">

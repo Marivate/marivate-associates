@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 const TRACKS = [
   { title: "Graduate Programmes", desc: "A structured pathway for outstanding LLB graduates." },
@@ -28,9 +29,9 @@ export function Careers() {
             We invest in lawyers who think rigorously, write precisely, and
             advocate with conviction. Find your place on our bench.
           </p>
-          <a href="#" className="mt-10 inline-flex items-center gap-3 bg-[var(--navy-deep)] text-ivory px-8 py-4 text-[0.78rem] tracking-[0.24em] uppercase hover:bg-gold hover:text-[var(--navy-deep)] transition-colors">
+          <Link to="/apply" className="mt-10 inline-flex items-center gap-3 bg-[var(--navy-deep)] text-ivory px-8 py-4 text-[0.78rem] tracking-[0.24em] uppercase hover:bg-gold hover:text-[var(--navy-deep)] transition-colors">
             Apply Now <ArrowRight size={16} />
-          </a>
+          </Link>
         </motion.div>
         <div className="lg:col-span-7">
           <div className="divide-y divide-border border-t border-b border-border">

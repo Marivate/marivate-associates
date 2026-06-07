@@ -27,11 +27,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-[var(--navy-deep)]/95 backdrop-blur-md border-b border-white/5 py-3"
-          : "bg-transparent py-6"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[var(--navy-deep)]/95 backdrop-blur-md border-b border-white/5 py-3"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">

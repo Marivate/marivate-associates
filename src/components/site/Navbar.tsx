@@ -8,9 +8,9 @@ const NAV = [
   { label: "About", to: "/about" },
   { label: "Practice Areas", to: "/practice-areas" },
   { label: "Attorneys", to: "/attorneys" },
-  { label: "Industries", to: "/industries" },
   { label: "Insights", to: "/insights" },
   { label: "Careers", to: "/careers" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export function Navbar() {

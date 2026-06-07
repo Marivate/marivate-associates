@@ -11,7 +11,7 @@ const AREAS = [
   { icon: Heart, title: "Family Law", desc: "Divorce, custody, maintenance, and estates." },
   { icon: Shield, title: "Criminal Defence", desc: "Professional representation and legal defence." },
   { icon: Lightbulb, title: "Intellectual Property", desc: "Trademark, copyright, and business protection." },
-  { icon: FileCheck, title: "Tax & Regulatory Compliance", desc: "Corporate compliance and tax advisory." },
+  { icon: FileCheck, title: "Wills & Estates", desc: "Wills, Estates and dissolution with trusted care." },
 ];
 
 export function PracticeAreas() {

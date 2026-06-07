@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-boardroom.jpg";
+import heroImg from "@/assets/hero1.jpeg";
 
 export function Hero() {
   return (
@@ -32,7 +32,7 @@ export function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="eyebrow eyebrow-line mb-8"
         >
-          Est. 2010 — South Africa
+          South Africa
         </motion.div>
 
         <motion.h1
@@ -52,9 +52,9 @@ export function Hero() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-10 max-w-2xl text-lg lg:text-xl text-ivory/75 leading-relaxed font-light"
         >
-          Delivering strategic legal solutions, exceptional advocacy, and trusted
-          counsel to businesses, institutions, and individuals across South Africa
-          and beyond.
+          Building businesses. Protecting people. Solving problems.
+          We combine modern thinking with legal expertise.
+          Because every great move starts with the right advice.
         </motion.p>
 
         <motion.div
@@ -90,9 +90,9 @@ export function Hero() {
             Scroll
           </div>
           <div className="hidden md:flex items-center gap-8 text-ivory/60 text-xs tracking-[0.24em] uppercase">
-            <span>Johannesburg</span>
-            <span className="w-8 h-px bg-gold/50" />
             <span>Pretoria</span>
+            <span className="w-8 h-px bg-gold/50" />
+            <span>Johannesburg</span>
             <span className="w-8 h-px bg-gold/50" />
             <span>Cape Town</span>
           </div>

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import aboutImg from "@/assets/about-library.jpg";
+import aboutImg from "@/assets/about2.jpg";
 
 const STATS = [
   { value: "500+", label: "Cases Successfully Resolved" },

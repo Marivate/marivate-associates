@@ -36,24 +36,20 @@ export function Attorneys() {
         >
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[4/5] overflow-hidden bg-[var(--navy-deep)]">
-              <img src={managing} alt="Tintswalo Marivate, Managing Partner" className="w-full h-full object-cover" loading="lazy" width={900} height={1200} />
+              <img src={managing} alt="Kateka Marivate, Managing Partner" className="w-full h-full object-cover" loading="lazy" width={900} height={1200} />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden md:block w-32 h-32 border-2 border-gold -z-0" />
           </div>
           <div className="lg:col-span-7">
             <div className="eyebrow eyebrow-line mb-6">Managing Partner</div>
             <h3 className="font-display text-5xl lg:text-7xl leading-[1] tracking-tight">
-              Tintswalo
+              Kateka
               <br />
               <span className="italic text-[var(--navy)]">Marivate</span>
             </h3>
             <div className="gold-rule my-8 max-w-[120px]" />
             <p className="text-lg text-muted-foreground font-light leading-relaxed max-w-xl">
-              With over fifteen years at the forefront of corporate and commercial
-              practice, Tintswalo leads the firm with a distinctive philosophy:
-              rigorous legal craft inseparable from commercial judgment. She advises
-              boards, executives, and founders on the matters that define their
-              institutions.
+              At the forefront of corporate and commercial practice, Kateka leads the firm with a distinctive philosophy: rigorous legal craft inseparable from commercial judgment. He advises boards, executives, and founders on the matters that shape and define their institutions.
             </p>
             <div className="mt-8 flex items-center gap-5">
               <a href="#" aria-label="LinkedIn" className="w-10 h-10 border border-[var(--navy-deep)]/20 flex items-center justify-center text-[var(--navy-deep)] hover:bg-[var(--navy-deep)] hover:text-gold transition-colors">

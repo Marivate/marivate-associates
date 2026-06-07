@@ -11,5 +11,5 @@ export const Route = createFileRoute("/attorneys")({
     ],
     links: [{ rel: "canonical", href: "/attorneys" }],
   }),
-  component: () => <div className="pt-20"><Attorneys /></div>,
+  component: () => <Attorneys />,
 });

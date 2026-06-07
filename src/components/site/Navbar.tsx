@@ -11,7 +11,6 @@ const NAV = [
   { label: "Industries", to: "/industries" },
   { label: "Insights", to: "/insights" },
   { label: "Careers", to: "/careers" },
-  { label: "Contact", to: "/contact" },
 ];
 
 export function Navbar() {

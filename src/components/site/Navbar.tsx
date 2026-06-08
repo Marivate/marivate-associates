@@ -34,10 +34,10 @@ export function Navbar() {
             M
           </div>*/}
           <div className="flex flex-col leading-none">
-            <span className="font-display text-ivory text-lg tracking-wide font-bold">
+            <span className="font-display text-ivory text-lg tracking-wide font-extrabold group-hover:text-gold transition-colors duration-300">
               MARIVATE
             </span>
-            <span className="text-[0.6rem] tracking-[0.32em] text-gold/80 uppercase mt-0.5">
+            <span className="text-[0.6rem] tracking-[0.32em] text-gold/80 uppercase mt-0.5 font-bold">
               & Associates inc.
             </span>
           </div>

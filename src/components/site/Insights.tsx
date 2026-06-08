@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import i1 from "@/assets/insight-1.jpg";
-import i2 from "@/assets/insight-2.jpg";
-import i3 from "@/assets/insight-3.jpg";
+import i2 from "@/assets/insight-2.jpeg";
+import i3 from "@/assets/insight-3.jpeg";
 
 const POSTS = [
   { img: i1, category: "Corporate Law Insights", date: "Mar 12, 2026", title: "The new POPIA enforcement landscape: what boards must know in 2026." },

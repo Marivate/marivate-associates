@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
           <div className="lg:col-span-5">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 border border-gold flex items-center justify-center text-gold font-display text-xl">M</div>
+              {/*<div className="w-10 h-10 border border-gold flex items-center justify-center text-gold font-display text-xl">M</div>*/}
               <div className="flex flex-col leading-none">
                 <span className="font-display text-xl tracking-wide">MARIVATE</span>
-                <span className="text-[0.62rem] tracking-[0.32em] text-gold/80 uppercase mt-0.5">& Associates</span>
+                <span className="text-[0.62rem] tracking-[0.32em] text-gold/80 uppercase mt-0.5">& Associates inc.</span>
               </div>
             </Link>
             <p className="mt-8 text-ivory/60 max-w-sm font-light leading-relaxed">

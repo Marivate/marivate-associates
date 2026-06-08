@@ -30,15 +30,15 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 border border-gold flex items-center justify-center text-gold font-display text-xl">
+          {/*<div className="w-9 h-9 border border-gold flex items-center justify-center text-gold font-display text-xl">
             M
-          </div>
+          </div>*/}
           <div className="flex flex-col leading-none">
             <span className="font-display text-ivory text-lg tracking-wide">
               MARIVATE
             </span>
             <span className="text-[0.6rem] tracking-[0.32em] text-gold/80 uppercase mt-0.5">
-              & Associates
+              & Associates inc.
             </span>
           </div>
         </Link>

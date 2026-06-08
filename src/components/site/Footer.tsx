@@ -50,9 +50,9 @@ export function Footer() {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ivory/50">
           <div>© 2026 MARIVATE & ASSOCIATES. All Rights Reserved.</div>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-gold transition-colors">Terms of Use</a>
-            <a href="#" className="hover:text-gold transition-colors">Disclaimer</a>
+            <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-use" className="hover:text-gold transition-colors">Terms of Use</Link>
+            <Link to="/disclaimer" className="hover:text-gold transition-colors">Disclaimer</Link>
           </div>
         </div>
       </div>

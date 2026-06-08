@@ -105,9 +105,10 @@
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: var(--navy-deep);
   }
   body {
-    background-color: var(--color-background);
+    background-color: var(--navy-deep);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";

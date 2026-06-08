@@ -11,9 +11,6 @@ const NAV = [
   { label: "Insights", to: "/insights" },
   { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
-  { label: "Privacy Policy", to: "/privacy-policy" },
-  { label: "Terms of Use", to: "/terms-of-use" },
-  { label: "Disclaimer", to: "/disclaimer" },
 ];
 
 export function Navbar() {

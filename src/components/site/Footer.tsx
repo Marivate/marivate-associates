@@ -35,10 +35,10 @@ export function Footer() {
           ]} />
           <FooterCol title="Practice" links={[
             { label: "Corporate & Commercial", to: "/practice-areas" },
-            { label: "Litigation", to: "/practice-areas" },
+            { label: "Litigation & Dispute Resolution", to: "/practice-areas" },
             { label: "Labour & Employment", to: "/practice-areas" },
-            { label: "Property", to: "/practice-areas" },
-            { label: "Tax & Compliance", to: "/practice-areas" },
+            { label: "Personal Injury Claims", to: "/practice-areas" },
+            { label: "Wills & Estate", to: "/practice-areas" },
           ]} />
           <FooterCol title="Office" links={[
             { label: "Centurion, Pretoria" },

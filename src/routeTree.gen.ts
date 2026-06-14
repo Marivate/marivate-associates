@@ -13,7 +13,6 @@ import { Route as TermsOfUseRouteImport } from './routes/terms-of-use'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PracticeAreasRouteImport } from './routes/practice-areas'
 import { Route as InsightsRouteImport } from './routes/insights'
-import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CareersRouteImport } from './routes/careers'
@@ -40,11 +39,6 @@ const PracticeAreasRoute = PracticeAreasRouteImport.update({
 const InsightsRoute = InsightsRouteImport.update({
   id: '/insights',
   path: '/insights',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IndustriesRoute = IndustriesRouteImport.update({
-  id: '/industries',
-  path: '/industries',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DisclaimerRoute = DisclaimerRouteImport.update({
@@ -91,7 +85,6 @@ export interface FileRoutesByFullPath {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/disclaimer': typeof DisclaimerRoute
-  '/industries': typeof IndustriesRoute
   '/insights': typeof InsightsRoute
   '/practice-areas': typeof PracticeAreasRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -105,7 +98,6 @@ export interface FileRoutesByTo {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/disclaimer': typeof DisclaimerRoute
-  '/industries': typeof IndustriesRoute
   '/insights': typeof InsightsRoute
   '/practice-areas': typeof PracticeAreasRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -120,7 +112,6 @@ export interface FileRoutesById {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/disclaimer': typeof DisclaimerRoute
-  '/industries': typeof IndustriesRoute
   '/insights': typeof InsightsRoute
   '/practice-areas': typeof PracticeAreasRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -136,7 +127,6 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/disclaimer'
-    | '/industries'
     | '/insights'
     | '/practice-areas'
     | '/privacy-policy'
@@ -150,7 +140,6 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/disclaimer'
-    | '/industries'
     | '/insights'
     | '/practice-areas'
     | '/privacy-policy'
@@ -164,7 +153,6 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/disclaimer'
-    | '/industries'
     | '/insights'
     | '/practice-areas'
     | '/privacy-policy'
@@ -179,7 +167,6 @@ export interface RootRouteChildren {
   CareersRoute: typeof CareersRoute
   ContactRoute: typeof ContactRoute
   DisclaimerRoute: typeof DisclaimerRoute
-  IndustriesRoute: typeof IndustriesRoute
   InsightsRoute: typeof InsightsRoute
   PracticeAreasRoute: typeof PracticeAreasRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -214,13 +201,6 @@ declare module '@tanstack/react-router' {
       path: '/insights'
       fullPath: '/insights'
       preLoaderRoute: typeof InsightsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/industries': {
-      id: '/industries'
-      path: '/industries'
-      fullPath: '/industries'
-      preLoaderRoute: typeof IndustriesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/disclaimer': {
@@ -283,7 +263,6 @@ const rootRouteChildren: RootRouteChildren = {
   CareersRoute: CareersRoute,
   ContactRoute: ContactRoute,
   DisclaimerRoute: DisclaimerRoute,
-  IndustriesRoute: IndustriesRoute,
   InsightsRoute: InsightsRoute,
   PracticeAreasRoute: PracticeAreasRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,

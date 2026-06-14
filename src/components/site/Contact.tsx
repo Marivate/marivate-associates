@@ -12,7 +12,22 @@ const schema = z.object({
   message: z.string().trim().min(10, "Please share at least 10 characters").max(2000),
 });
 
-const AREAS = ["Corporate & Commercial", "Litigation", "Labour & Employment", "Property", "Family Law", "Criminal Defence", "Intellectual Property", "Wills & Estates", "Other"];
+const AREAS = [
+  "Debt Collection",
+  "Sports & Entertainment Law",
+  "Personal Injury Claims",
+  "Legal Compliance",
+  "Contract Law",
+  "Comprehensive Legal Opinions",
+  "Corporate & Commercial Law",
+  "Litigation & Dispute Resolution",
+  "Labour & Employment Law",
+  "Family Law",
+  "Criminal Defence",
+  "Intellectual Property Law",
+  "Wills & Estate",
+  "Other",
+];
 
 export function Contact() {
   const [submitting, setSubmitting] = useState(false);
@@ -44,30 +59,30 @@ export function Contact() {
             <span className="italic text-gold"> consultation.</span>
           </h2>
           <p className="mt-8 text-ivory/70 font-light leading-relaxed max-w-md">
-            All enquiries are received in confidence. A partner-level response
+            All enquiries are received in confidence. An Attorney will respond
             within one business day.
           </p>
 
           <div className="mt-12 space-y-7">
             <ContactRow icon={MapPin} label="Office">
-              155 West Street, Sandton<br />Johannesburg 2196, South Africa
+              Centurion, Pretoria
             </ContactRow>
             <ContactRow icon={Phone} label="Direct">
-              <a href="tel:+27110000000" className="hover:text-gold">+27 11 000 0000</a>
+              <a href="tel:+27849868671" className="hover:text-gold">084 986 8671</a>
             </ContactRow>
             <ContactRow icon={Mail} label="Email">
-              <a href="mailto:counsel@marivate.law" className="hover:text-gold">counsel@marivate.law</a>
+              <a href="mailto:Kateka@MarivateAssociates.co.za" className="hover:text-gold">Kateka@MarivateAssociates.co.za</a>
             </ContactRow>
             <ContactRow icon={Clock} label="Hours">
-              Mon — Fri · 08:00 – 18:00 SAST
+              Mon — Fri · 08:00 – 16:30 SAST
             </ContactRow>
           </div>
 
           {/* Map */}
           <div className="mt-10 aspect-[16/9] overflow-hidden border border-white/10">
             <iframe
-              title="MARIVATE & ASSOCIATES — office location"
-              src="https://www.google.com/maps?q=Sandton%20Johannesburg&output=embed"
+              title="Marivate & Associates Inc — office location"
+              src="https://www.google.com/maps?q=Centurion%20Pretoria&output=embed"
               className="w-full h-full grayscale contrast-110"
               loading="lazy"
             />
@@ -103,8 +118,9 @@ export function Contact() {
             <ArrowRight size={16} />
           </button>
           <p className="mt-6 text-xs text-ivory/50 leading-relaxed">
-            By submitting, you consent to MARIVATE & ASSOCIATES contacting you
-            about your enquiry. Information is treated in strict confidence.
+            By submitting, you consent to Marivate &amp; Associates Inc
+            contacting you about your enquiry. Information is treated in
+            strict confidence.
           </p>
         </motion.form>
       </div>

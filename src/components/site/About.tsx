@@ -1,13 +1,6 @@
 import { motion } from "motion/react";
 import aboutImg from "@/assets/about2.jpg";
 
-const STATS = [
-  { value: "500+", label: "Cases Successfully Resolved" },
-  { value: "50+", label: "Corporate Clients" },
-  { value: "15+", label: "Years of Excellence" },
-  { value: "9", label: "Provinces Covered" },
-];
-
 export function About() {
   return (
     <section id="about" className="relative bg-ivory py-28 lg:py-40">
@@ -52,32 +45,16 @@ export function About() {
             </h2>
             <div className="gold-rule my-10 max-w-[120px]" />
             <p className="text-lg leading-relaxed text-muted-foreground font-light">
-              MARIVATE & ASSOCIATES is a premier South African law firm dedicated
-              to delivering exceptional legal services with integrity, precision,
-              and unwavering commitment to our clients. From boardrooms to
-              courtrooms, our counsel anchors every decision that defines a
-              business — and every right that must be defended.
+              At Marivate &amp; Associates Inc, we are committed to upholding a
+              tradition of excellence built on trust, integrity, and unwavering
+              dedication to our clients. We understand that legal matters
+              require not only sound legal expertise but also a trusted advisor
+              who prioritises your best interests. Through professional
+              excellence, personalised service, and a results-driven approach,
+              we strive to provide practical and effective legal solutions
+              while fostering lasting relationships founded on confidence and
+              mutual respect.
             </p>
-
-            <div className="mt-14 grid grid-cols-2 gap-y-10 gap-x-8">
-              {STATS.map((s, i) => (
-                <motion.div
-                  key={s.label}
-                  initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2 + i * 0.1, duration: 0.6 }}
-                  className="border-l-2 border-gold pl-5"
-                >
-                  <div className="font-display text-4xl lg:text-5xl text-[var(--navy-deep)]">
-                    {s.value}
-                  </div>
-                  <div className="mt-2 text-[0.7rem] tracking-[0.22em] uppercase text-muted-foreground">
-                    {s.label}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>

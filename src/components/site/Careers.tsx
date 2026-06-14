@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 const TRACKS = [
-  { title: "Graduate Programmes", desc: "A structured pathway for outstanding LLB graduates." },
-  { title: "Candidate Attorneys", desc: "Two-year articles under partner-led supervision." },
-  { title: "Experienced Lawyers", desc: "Lateral opportunities for specialist practitioners." },
-  { title: "Legal Support Staff", desc: "Paralegal, knowledge, and operations roles." },
+  { title: "Vacation Work Programme", desc: "A structured programme for outstanding law students." },
+  { title: "Candidate Attorneys", desc: "Practical Vocational Training (PVT)." },
+  { title: "Experienced Lawyers", desc: "Attorneys." },
+  { title: "Legal Support Staff", desc: "Paralegal, knowledge and operations roles." },
 ];
 
 export function Careers() {
@@ -23,10 +23,10 @@ export function Careers() {
           <div className="eyebrow eyebrow-line mb-6">Careers</div>
           <h2 className="font-display text-4xl lg:text-6xl leading-[1.02] tracking-tight text-balance">
             Build your future with
-            <span className="italic text-[var(--navy)]"> MARIVATE.</span>
+            <span className="italic text-[var(--navy)]"> Marivate &amp; Associates Inc.</span>
           </h2>
           <p className="mt-8 text-lg text-muted-foreground font-light leading-relaxed max-w-md">
-            We invest in lawyers who think rigorously, write precisely, and
+            We invest in individuals who think rigorously, write precisely, and
             advocate with conviction. Find your place on our bench.
           </p>
           <Link to="/apply" className="mt-10 inline-flex items-center gap-3 bg-[var(--navy-deep)] text-ivory px-8 py-4 text-[0.78rem] tracking-[0.24em] uppercase hover:bg-gold hover:text-[var(--navy-deep)] transition-colors">

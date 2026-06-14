@@ -2,12 +2,12 @@ import { motion } from "motion/react";
 import { Award, Heart, Brain, Map, Sparkles, Handshake } from "lucide-react";
 
 const REASONS = [
-  { icon: Award, title: "Proven Legal Expertise", desc: "Decades of combined experience across high-stakes matters." },
+  { icon: Award, title: "Proven Legal Expertise", desc: "Proven experience across high-stakes matters." },
+  { icon: Brain, title: "Strategic Business Insight", desc: "Attorneys who read boardrooms as fluently as case law." },
   { icon: Heart, title: "Client-Centered Approach", desc: "Every brief is personal. Every outcome, measured by yours." },
-  { icon: Brain, title: "Strategic Business Insight", desc: "Counsel that reads boardrooms as fluently as case law." },
-  { icon: Map, title: "Nationwide Reach", desc: "Active across all nine provinces and select cross-border work." },
-  { icon: Sparkles, title: "Innovative Legal Solutions", desc: "Modern frameworks for modern commercial realities." },
-  { icon: Handshake, title: "Trusted Relationships", desc: "Long-term partnerships built on discretion and results." },
+  { icon: Map, title: "Nationwide Reach", desc: "We can execute mandates from every corner of South Africa." },
+  { icon: Sparkles, title: "Innovative Legal Solutions", desc: "We have modern solutions for modern problems." },
+  { icon: Handshake, title: "Trusted Relationships", desc: "We build long-term partnerships based on respect and results." },
 ];
 
 export function WhyChoose() {
@@ -17,7 +17,7 @@ export function WhyChoose() {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="eyebrow justify-center mb-6">
             <span className="w-10 h-px bg-gold" />
-            Why MARIVATE
+            Why Marivate & Associates Inc
             <span className="w-10 h-px bg-gold" />
           </div>
           <h2 className="font-display text-4xl lg:text-6xl leading-[1.05] tracking-tight text-balance">

@@ -1,17 +1,23 @@
 import { motion } from "motion/react";
 import {
-  Briefcase, Scale, Users, Building2, Heart, Shield, Lightbulb, FileCheck, ArrowUpRight,
+  Briefcase, Scale, Users, Heart, Shield, Lightbulb, FileCheck, ArrowUpRight,
+  Banknote, Trophy, HeartPulse, ClipboardCheck, FileSignature, BookOpen,
 } from "lucide-react";
 
 const AREAS = [
-  { icon: Briefcase, title: "Corporate & Commercial Law", desc: "Business formation, mergers, acquisitions, and governance." },
-  { icon: Scale, title: "Litigation & Dispute Resolution", desc: "Civil, commercial, and contractual disputes." },
-  { icon: Users, title: "Labour & Employment Law", desc: "Workplace compliance and employment disputes." },
-  { icon: Building2, title: "Property & Real Estate Law", desc: "Conveyancing and complex property transactions." },
-  { icon: Heart, title: "Family Law", desc: "Divorce, custody, maintenance, and estates." },
-  { icon: Shield, title: "Criminal Defence", desc: "Professional representation and legal defence." },
-  { icon: Lightbulb, title: "Intellectual Property", desc: "Trademark, copyright, and business protection." },
-  { icon: FileCheck, title: "Wills & Estates", desc: "Wills, Estates and dissolution with trusted care." },
+  { icon: Banknote, title: "Debt Collection", desc: "Efficient and strategic debt recovery services." },
+  { icon: Trophy, title: "Sports & Entertainment Law", desc: "Practical legal solutions to athletes, artists, entertainers, and industry stakeholders." },
+  { icon: HeartPulse, title: "Personal Injury Claims", desc: "Road Accident Fund, Workplace Injuries, Public Liability & Medical Malpractice." },
+  { icon: ClipboardCheck, title: "Legal Compliance", desc: "Identify, manage, and meet legal and regulatory obligations with confidence and precision." },
+  { icon: FileSignature, title: "Contract Law", desc: "Drafting and reviewing agreements to resolving contractual disputes." },
+  { icon: BookOpen, title: "Comprehensive Legal Opinions", desc: "Clear, well-researched, practical opinions to support informed decision-making and risk management." },
+  { icon: Briefcase, title: "Corporate & Commercial Law", desc: "Commercial transactions, corporate governance, and day-to-day business operations." },
+  { icon: Scale, title: "Litigation & Dispute Resolution", desc: "Resolving disputes through negotiation, mediation, arbitration, and court proceedings." },
+  { icon: Users, title: "Labour & Employment Law", desc: "Assisting employers and employees with workplace matters and ensuring compliance with labour legislation." },
+  { icon: Heart, title: "Family Law", desc: "Divorce, child custody, maintenance, and other family-related disputes." },
+  { icon: Shield, title: "Criminal Defence", desc: "Bail proceedings." },
+  { icon: Lightbulb, title: "Intellectual Property Law", desc: "Protect and enforce intellectual property rights, trademarks and copyrights." },
+  { icon: FileCheck, title: "Wills & Estate", desc: "Wills, and administering deceased estates." },
 ];
 
 export function PracticeAreas() {
@@ -25,13 +31,13 @@ export function PracticeAreas() {
           <div>
             <div className="eyebrow eyebrow-line mb-6">Practice Areas</div>
             <h2 className="font-display text-4xl lg:text-6xl leading-[1.05] tracking-tight text-balance">
-              Comprehensive counsel
+              Comprehensive legal expertise
               <br />
               <span className="italic text-gold">across every discipline.</span>
             </h2>
           </div>
           <p className="text-ivory/70 text-lg font-light leading-relaxed max-w-lg lg:justify-self-end">
-            Eight core practice areas, one unified standard of service. Each
+            Thirteen core practice areas, one unified standard of service. Each
             mandate is led by a senior practitioner and supported by specialists
             chosen for the matter.
           </p>

@@ -3,7 +3,7 @@ import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { PracticeAreas } from "@/components/site/PracticeAreas";
 import { Attorneys } from "@/components/site/Attorneys";
-import { Industries } from "@/components/site/Industries";
+
 import { WhyChoose } from "@/components/site/WhyChoose";
 import { Insights } from "@/components/site/Insights";
 import { Testimonials } from "@/components/site/Testimonials";

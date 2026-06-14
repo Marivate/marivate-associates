@@ -12,7 +12,22 @@ const schema = z.object({
   message: z.string().trim().min(10, "Please share at least 10 characters").max(2000),
 });
 
-const AREAS = ["Corporate & Commercial", "Litigation", "Labour & Employment", "Property", "Family Law", "Criminal Defence", "Intellectual Property", "Wills & Estates", "Other"];
+const AREAS = [
+  "Debt Collection",
+  "Sports & Entertainment Law",
+  "Personal Injury Claims",
+  "Legal Compliance",
+  "Contract Law",
+  "Comprehensive Legal Opinions",
+  "Corporate & Commercial Law",
+  "Litigation & Dispute Resolution",
+  "Labour & Employment Law",
+  "Family Law",
+  "Criminal Defence",
+  "Intellectual Property Law",
+  "Wills & Estate",
+  "Other",
+];
 
 export function Contact() {
   const [submitting, setSubmitting] = useState(false);

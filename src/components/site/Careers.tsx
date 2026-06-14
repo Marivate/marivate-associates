@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
 const TRACKS = [
-  { title: "Graduate Programmes", desc: "A structured pathway for outstanding LLB graduates." },
-  { title: "Candidate Attorneys", desc: "Two-year articles under partner-led supervision." },
-  { title: "Experienced Lawyers", desc: "Lateral opportunities for specialist practitioners." },
-  { title: "Legal Support Staff", desc: "Paralegal, knowledge, and operations roles." },
+  { title: "Vacation Work Programme", desc: "A structured programme for outstanding law students." },
+  { title: "Candidate Attorneys", desc: "Practical Vocational Training (PVT)." },
+  { title: "Experienced Lawyers", desc: "Attorneys." },
+  { title: "Legal Support Staff", desc: "Paralegal, knowledge and operations roles." },
 ];
 
 export function Careers() {

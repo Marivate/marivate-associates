@@ -30,7 +30,7 @@ function Home() {
       <About />
       <PracticeAreas />
       <Attorneys />
-      <Industries />
+      
       <WhyChoose />
       <Insights />
       <Testimonials />

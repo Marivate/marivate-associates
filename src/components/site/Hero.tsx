@@ -93,8 +93,6 @@ export function Hero() {
             <span>Pretoria</span>
             <span className="w-8 h-px bg-gold/50" />
             <span>Johannesburg</span>
-            <span className="w-8 h-px bg-gold/50" />
-            <span>Cape Town</span>
           </div>
         </motion.div>
       </div>

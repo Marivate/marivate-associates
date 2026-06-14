@@ -118,8 +118,9 @@ export function Contact() {
             <ArrowRight size={16} />
           </button>
           <p className="mt-6 text-xs text-ivory/50 leading-relaxed">
-            By submitting, you consent to MARIVATE & ASSOCIATES contacting you
-            about your enquiry. Information is treated in strict confidence.
+            By submitting, you consent to Marivate &amp; Associates Inc
+            contacting you about your enquiry. Information is treated in
+            strict confidence.
           </p>
         </motion.form>
       </div>

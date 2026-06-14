@@ -41,10 +41,10 @@ export function Footer() {
             { label: "Tax & Compliance", to: "/practice-areas" },
           ]} />
           <FooterCol title="Office" links={[
-            { label: "155 West Street, Sandton" },
-            { label: "Johannesburg 2196" },
-            { label: "+27 11 000 0000" },
-            { label: "counsel@marivate.law" },
+            { label: "Centurion, Pretoria" },
+            { label: "Mon — Fri · 08:00 – 16:30" },
+            { label: "084 986 8671" },
+            { label: "Kateka@MarivateAssociates.co.za" },
           ]} />
         </div>
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ivory/50">

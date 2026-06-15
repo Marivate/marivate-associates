@@ -3,6 +3,9 @@ import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { z } from "zod";
 import { toast } from "sonner";
+import { useServerFn } from "@tanstack/react-start";
+import { sendConsultation } from "@/lib/email.functions";
+
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name required").max(100),

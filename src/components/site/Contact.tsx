@@ -105,8 +105,8 @@ export function Contact() {
             <Field label="Email" name="email" type="email" required maxLength={255} />
             <Field label="Phone" name="phone" required maxLength={40} />
             <Field as="select" label="Practice Area" name="area" required>
-              <option value="">Select…</option>
-              {AREAS.map(a => <option key={a} value={a}>{a}</option>)}
+              <option value="" className="bg-[var(--navy)] text-ivory">Select…</option>
+              {AREAS.map(a => <option key={a} value={a} className="bg-[var(--navy)] text-ivory">{a}</option>)}
             </Field>
           </div>
           <div className="mt-6">

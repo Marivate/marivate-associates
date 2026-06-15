@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Linkedin, Mail } from "lucide-react";
-import managing from "@/assets/attorney-managing-partner.jpg";
+import managing from "@/assets/KatekaMarivate.jpeg";
 
 export function Attorneys() {
   return (

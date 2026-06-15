@@ -42,11 +42,14 @@ export function Contact() {
       return;
     }
     setSubmitting(true);
+    const subject = `Consultation Request — ${result.data.area}`;
+    const body = `Name: ${result.data.name}%0D%0AEmail: ${result.data.email}%0D%0APhone: ${result.data.phone}%0D%0APractice Area: ${result.data.area}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(result.data.message)}`;
+    window.location.href = `mailto:Kateka@MarivateAssociates.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
     setTimeout(() => {
-      toast.success("Consultation request received. We'll be in touch within one business day.");
+      toast.success("Opening your email client to send the request.");
       setSubmitting(false);
       (e.target as HTMLFormElement).reset();
-    }, 800);
+    }, 400);
   };
 
   return (

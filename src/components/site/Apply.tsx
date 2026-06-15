@@ -31,6 +31,7 @@ const ACCEPTED = [".pdf", ".doc", ".docx"];
 export function Apply() {
   const [submitting, setSubmitting] = useState(false);
   const [files, setFiles] = useState<File[]>([]);
+  const send = useServerFn(sendApplication);
 
   const onFiles = (incoming: FileList | null) => {
     if (!incoming) return;
@@ -53,9 +54,21 @@ export function Apply() {
 
   const removeFile = (i: number) => setFiles((prev) => prev.filter((_, idx) => idx !== i));
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const fileToBase64 = (f: File) =>
+    new Promise<string>((resolve, reject) => {
+      const r = new FileReader();
+      r.onload = () => {
+        const s = r.result as string;
+        resolve(s.split(",")[1] ?? "");
+      };
+      r.onerror = reject;
+      r.readAsDataURL(f);
+    });
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const data = Object.fromEntries(fd) as Record<string, string>;
     const result = schema.safeParse(data);
     if (!result.success) {
@@ -67,13 +80,22 @@ export function Apply() {
       return;
     }
     setSubmitting(true);
-    setTimeout(() => {
+    try {
+      const attachments = await Promise.all(
+        files.map(async (f) => ({ filename: f.name, content: await fileToBase64(f) })),
+      );
+      await send({ data: { ...result.data, attachments } });
       toast.success("Application received. Our recruitment team will respond within 10 business days.");
-      setSubmitting(false);
-      (e.target as HTMLFormElement).reset();
+      form.reset();
       setFiles([]);
-    }, 900);
+    } catch (err) {
+      console.error(err);
+      toast.error("Could not submit your application. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
+
 
   return (
     <section className="bg-[var(--navy-deep)] text-ivory py-28 lg:py-36">

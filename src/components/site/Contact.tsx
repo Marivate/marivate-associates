@@ -34,10 +34,12 @@ const AREAS = [
 
 export function Contact() {
   const [submitting, setSubmitting] = useState(false);
+  const send = useServerFn(sendConsultation);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const data = Object.fromEntries(fd) as Record<string, string>;
     const result = schema.safeParse(data);
     if (!result.success) {
@@ -45,15 +47,18 @@ export function Contact() {
       return;
     }
     setSubmitting(true);
-    const subject = `Consultation Request — ${result.data.area}`;
-    const body = `Name: ${result.data.name}%0D%0AEmail: ${result.data.email}%0D%0APhone: ${result.data.phone}%0D%0APractice Area: ${result.data.area}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(result.data.message)}`;
-    window.location.href = `mailto:Kateka@MarivateAssociates.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
-    setTimeout(() => {
-      toast.success("Opening your email client to send the request.");
+    try {
+      await send({ data: result.data });
+      toast.success("Request sent. An Attorney will respond within one business day.");
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast.error("Could not send your request. Please try again or email us directly.");
+    } finally {
       setSubmitting(false);
-      (e.target as HTMLFormElement).reset();
-    }, 400);
+    }
   };
+
 
   return (
     <section id="contact" className="bg-[var(--navy-deep)] text-ivory py-28 lg:py-36">

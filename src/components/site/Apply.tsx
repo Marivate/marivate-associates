@@ -3,6 +3,9 @@ import { ArrowRight, Upload, X, FileText } from "lucide-react";
 import { useState } from "react";
 import { z } from "zod";
 import { toast } from "sonner";
+import { useServerFn } from "@tanstack/react-start";
+import { sendApplication } from "@/lib/email.functions";
+
 
 const PROGRAMMES = [
   "Graduate Programme",
